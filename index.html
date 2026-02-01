@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,35 @@
     <script src="url_for_google_analitycs.js"></script>
   </head>
   <body>
-    <h1>hello</h1>
+    <div>
+      <header class="flex align-center">
+        <h1 class="w-200">kanban</h1>
+        <div class="flex w-full flex-between align-center">
+          <h3>Platform Launch</h3>
+          <div class="flex">
+            <button id="add_new_task">+ Add New Task</button>
+            <button aria-label="menu button">...</button>
+          </div>
+        </div>
+      </header>
+      <div class="flex">
+        <nav class="w-200">
+          <div id="board_list"></div>
+          <div id="add_new_board">
+            <button>+ Create New Board</button>
+          </div>
+        </nav>
+        <main class="flex w-full">
+          <div id="board" class="flex"></div>
+          <div id="add_new_column">
+            <button>+ New Column</button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div id="modal" class="none">
+      <button id="close">X</button>
+      <div class="modal-content"></div>
+    </div>
   </body>
 </html>
